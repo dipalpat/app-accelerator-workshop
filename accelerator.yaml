@@ -5,11 +5,6 @@ accelerator:
   tags: ["spring", "java", "web"]
 
   options:
-  - name: projectName
-    inputType: text
-    defaultValue: "my-hellow-world"
-    label: Project Name
-    required: true
 
   - name: buildTool
     label: Build Tool
