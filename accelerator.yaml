@@ -5,6 +5,12 @@ accelerator:
   tags: ["spring", "java", "web"]
 
   options:
+  - name: projectName
+    inputType: text
+    defaultValue: "my-hellow-world"
+    label: Project Name
+    required: true
+
   - name: buildTool
     label: Build Tool
     inputType: select
@@ -15,6 +21,7 @@ accelerator:
         text: Maven (https://maven.apache.org/)
       - value: gradle
         text: Gradle (https://gradle.org/)
+
   - name: ide
     label: IDE
     inputType: select
