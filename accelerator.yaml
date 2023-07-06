@@ -17,6 +17,9 @@ accelerator:
       - value: gradle
         text: Gradle (https://gradle.org/)
 
+  #
+  # UI option to pick IDE specific configs 
+  #
   - name: ide
     label: IDE
     inputType: select
@@ -29,7 +32,18 @@ accelerator:
       - value: vscode
         text: Visual Studio Code
     defaultValue: intellij
-    
+  
+  #
+  # UI option to get the package name for the generated java code
+  #
+  - name: packageName
+    dataType: string
+    required: true
+    defaultValue: "com.acme"
+    label: Package name
+    description: Name of the package to put generated code under
+  
+
   - name: javaVersion
     inputType: select
     label: Java version to use
