@@ -1,0 +1,45 @@
+accelerator:
+  displayName: Hello World
+  description: "Hello World Accelerator"
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
+  tags: ["spring", "java", "web"]
+
+  options:
+  - name: buildTool
+    label: Build Tool
+    inputType: select
+    required: true
+    defaultValue: maven
+    choices:
+      - value: maven
+        text: Maven (https://maven.apache.org/)
+      - value: gradle
+        text: Gradle (https://gradle.org/)
+  - name: ide
+    label: IDE
+    inputType: select
+    dependsOn: 
+      name: buildTool
+      value: gradle
+    choices:
+      - value: intellij
+        text: IntelliJ Idea
+      - value: vscode
+        text: Visual Studio Code
+    defaultValue: intellij
+    
+  - name: javaVersion
+    inputType: select
+    label: Java version to use
+    choices:
+    - value: "11"
+      text: "Java 11"
+    - value: "17"
+      text: "Java 17"
+    defaultValue: "11"
+
+  - name: nativeBuild
+    label: Support native GraalVM builds (Requires Spring Boot 3.0 or 3.1 and Java 17)
+    inputType: checkbox
+    dataType: boolean
+    defaultValue: false
