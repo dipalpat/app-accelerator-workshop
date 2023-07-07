@@ -41,7 +41,10 @@ accelerator:
 ## Added engine section that does the transforms. Here we are using chain transform with include filter of all folders and files. 
 ## We then add exclude filter to ensure resulting output files won't include files.
 engine:
-  chain: 
+# Changed from chain to merge. Chain works sequentially, takes output of previous step as input for next. Last filter only included
+# pom.xml. Merge akes the outputs of several transforms executed independently on the same input sourceset and combines or merges 
+# them together into a single sourceset.
+  merge: 
   - include: [ "**/**" ]
     exclude: [ "options.json", "run.sh","acc-engine-endpoint.sh"]
   # I want to change "helloworld" in pom.xml to "projectName" value and include all files from include filter above.
@@ -50,5 +53,15 @@ engine:
     chain:
       - type: ReplaceText
         substitutions:
-          - text: helloworld
+          - text: "helloworld"
             with: "#projectName"
+      # Chain multiple transforms to work on same set of file(s). Change packageName and Java version.
+      - type: ReplaceText
+        substitutions:
+          - text: "com.example"
+            with: "#packageName"
+      - type: ReplaceText
+        condition: "#javaVersion == '17'"
+        substitutions:
+          - text: <java.version>11</java.version>
+            with: "'<java.version>17</java.version>'"
