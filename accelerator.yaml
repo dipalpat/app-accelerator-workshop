@@ -41,5 +41,5 @@ accelerator:
 engine:
   chain: 
   - include: [ "**/**" ]
-    exclude: [ "options.json", "run.sh"]
+    exclude: [ "options.json", "run.sh","acc-engine-endpoint.sh"]
     
