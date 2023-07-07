@@ -4,7 +4,7 @@ accelerator:
   iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
   tags: ["spring", "java", "web", "rest"]
 
-options:
+  options:
   #
   # UI option to get the package name for the generated java code
   #
