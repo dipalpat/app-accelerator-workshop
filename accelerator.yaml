@@ -2,7 +2,7 @@ accelerator:
   displayName: Hello World
   description: "Hello World Accelerator"
   iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
-  tags: ["spring", "java", "web"]
+  tags: ["spring", "java", "web", "rest"]
 
 options:
   #
