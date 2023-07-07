@@ -29,6 +29,18 @@ accelerator:
       text: "Java 17"
     description: Select java version to use
 
+  #
+  # UI option to optionally generate K8s deployment files
+  #
+  - name: generateK8sYAMLS
+    label: Generate K8s YAML for this project
+    inputType: checkbox
+    dataType: boolean
+    defaultValue: false
+
+  #
+  # Example UI options for reference from here on out. For the workshop, UI options will be leverage for all the other steps.
+  #
 
   #
   # UI option to pick build tool i.e. Gradle or Maven 
@@ -63,9 +75,6 @@ accelerator:
         text: Visual Studio Code
     description: Select the choice of IDE
 
-  #
-  # Example UI options for reference from here on out. For the workshop, UI options will be leverage for all the other steps.
-  #
   - name: nativeBuild
     label: Support native GraalVM builds (Requires Spring Boot 3.0 or 3.1 and Java 17)
     inputType: checkbox
