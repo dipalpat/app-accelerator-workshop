@@ -1,1 +1,1 @@
-ACC_EP=SET YOUR ACCELERATOR ENDPOINT
+ACC_EP=https://asae-workshop-devtoolportal-c1ce1.svc.azuremicroservices.io

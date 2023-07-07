@@ -35,4 +35,5 @@ az spring application-accelerator customized-accelerator create \
 * Check out `transforms-1` branch
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
 * If this accelerator is already registered, ensure you change the branch to `transforms-1`
+* This section introduces to the `chain` transform and `include` and `exclude` filters. This sets the foundation for next lab that build on this.
 #### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/ui-options...transforms-1)
