@@ -14,7 +14,6 @@ options:
   dataType: string
   required: true
   defaultValue: "com.acme"
-  description: Name of the package to put generated code under
 
 #
 # UI option to get java version to use
