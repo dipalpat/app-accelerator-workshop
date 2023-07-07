@@ -65,3 +65,12 @@ engine:
         substitutions:
           - text: <java.version>11</java.version>
             with: "'<java.version>17</java.version>'"
+  # Added third include filter for all java files. Invoking OpenRewrite recipe to change package to match packageName entered.
+  - include: ["**/*.java"]
+    chain:
+      - type: OpenRewriteRecipe
+        recipe: org.openrewrite.java.ChangePackage
+        options:
+          oldPackageName: "'com.example'"
+          newPackageName: "#packageName"
+    

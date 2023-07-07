@@ -43,11 +43,18 @@ az spring application-accelerator customized-accelerator create \
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
 * If this accelerator is already registered, ensure you change the branch to `transforms-2`
 * We now add another include filter on top of previous lab and add substitution logic to replace `helloworld` references within `pom.xml`. Explain the behavior of chain tranform. 
-* [View difference from ui-options branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-1...transforms-2)
+* [View difference from transforms-1 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-1...transforms-2)
 
 ### Transforms-3
 * Check out `transforms-3` branch
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
 * If this accelerator is already registered, ensure you change the branch to `transforms-3`
 * Introduce `merge` transform and it's difference from `chain` transform. Add transform to replace packageName and Java version.
-* [View difference from ui-options branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-2...transforms-3)
+* [View difference from transforms-2 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-2...transforms-3)
+
+### Transforms-4
+* Check out `transforms-4` branch
+* Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
+* If this accelerator is already registered, ensure you change the branch to `transforms-4`
+* Introduce OpenRewrite and how to invoke recipes within accelerators. In this lab, we use `org.openrewrite.java.ChangePackage` recipe to change package name.
+* [View difference from transforms-3 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-3...transforms-4)
