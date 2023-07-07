@@ -1,5 +1,5 @@
 {
-    "generateK8sYAMLS": false,
+    "generateK8sYAMLS": true,
     "javaVersion": "17",
     "packageName": "com.acme",
     "projectName": "test-abc"

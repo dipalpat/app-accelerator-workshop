@@ -1,0 +1,32 @@
+#@ load("@ytt:data", "data")
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: #@ data.values.projectName
+  name: #@ data.values.projectName
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: #@ data.values.projectName
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: #@ data.values.projectName
+        app.kubernetes.io/part-of: #@ data.values.projectName
+    spec:
+      containers:
+      - image: #@ "{}".format(data.values.projectName, ":latest")
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          httpGet:
+            path: /actuator/health/liveness
+            port: 8080
+        name: app
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /actuator/health/readiness
+            port: 8080

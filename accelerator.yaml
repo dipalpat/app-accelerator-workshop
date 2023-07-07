@@ -65,7 +65,10 @@ engine:
         substitutions:
           - text: <java.version>11</java.version>
             with: "'<java.version>17</java.version>'"
+
+  #
   # Added third include filter for all java files. Invoking OpenRewrite recipe to change package to match packageName entered.
+  #
   - include: ["**/*.java"]
     chain:
       - type: OpenRewriteRecipe
@@ -73,4 +76,16 @@ engine:
         options:
           oldPackageName: "'com.example'"
           newPackageName: "#packageName"
-    
+
+  # 
+  # Generate the K8s manifests using carvel YTT tool
+  #
+  - include: [ "kubernetes/k8s/deployment.yaml", "kubernetes/k8s/service.yaml"]
+    condition: "#generateK8sYAMLS == true"
+    chain:
+      - type: YTT
+      - type: RewritePath
+        rewriteTo: "'kubernetes/' + #filename"
+  chain:
+  - exclude: ["kubernetes/k8s/*"]
+  

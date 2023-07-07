@@ -1,0 +1,15 @@
+#@ load("@ytt:data", "data")
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: #@ data.values.projectName
+  name: hello-fun
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/name: #@ data.values.projectName
+  sessionAffinity: None
+  type: NodePort
