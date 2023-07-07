@@ -27,12 +27,12 @@ az spring application-accelerator customized-accelerator create \
 
 ### UI Options
 * Check out `ui-options` branch
-* Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid some overriding it)
-* If the accelerators is already registered, ensure you change the branch to `ui-options`
+* Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
+* If this accelerator is already registered, ensure you change the branch to `ui-options`
 ### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/registration...ui-options)
   
 ### Transforms-1 - Change artifactID
 * Check out `transforms-1` branch
-* Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid some overriding it)
-* If the accelerators is already registered, ensure you change the branch to `transforms-1`
+* Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
+* If this accelerator is already registered, ensure you change the branch to `transforms-1`
 #### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/ui-options...transforms-1)
