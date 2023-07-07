@@ -9,173 +9,173 @@ accelerator:
   # UI option to get the package name for the generated java code
   #
   - name: packageName
+    label: Package name
     dataType: string
     required: true
     defaultValue: "com.acme"
-    label: Package name
     description: Name of the package to put generated code under
 
-#
-# UI option to get java version to use
-#
-# - name: javaVersion
-#   label: Java version to use
-#   inputType: select
-#   defaultValue: "11"
-#   choices:
-#   - value: "11"
-#     text: "Java 11"
-#   - value: "17"
-#     text: "Java 17"
-#   description: Select java version to use
+  #
+  # UI option to get java version to use
+  #
+  - name: javaVersion
+    label: Java version to use
+    inputType: select
+    defaultValue: "11"
+    choices:
+    - value: "11"
+      text: "Java 11"
+    - value: "17"
+      text: "Java 17"
+    description: Select java version to use
 
 
-# #
-# # UI option to pick build tool i.e. Gradle or Maven 
-# #
-# - name: buildTool
-#   label: Build Tool
-#   inputType: select
-#   required: true
-#   defaultValue: maven
-#   choices:
-#     - value: maven
-#       text: Maven (https://maven.apache.org/)
-#     - value: gradle
-#       text: Gradle (https://gradle.org/)
-#   description: Select the build tool for this project
+  #
+  # UI option to pick build tool i.e. Gradle or Maven 
+  #
+  - name: buildTool
+    label: Build Tool
+    inputType: select
+    required: true
+    defaultValue: maven
+    choices:
+      - value: maven
+        text: Maven (https://maven.apache.org/)
+      - value: gradle
+        text: Gradle (https://gradle.org/)
+    description: Select the build tool for this project
 
 
-# #
-# # UI option to pick IDE specific configs. This options depends on buildTool above and only shows up if buildTool selected value is `gradle`
-# #
-# - name: ide
-#   label: IDE
-#   inputType: select
-#   defaultValue: intellij
-#   dependsOn: 
-#     name: buildTool
-#     value: gradle
-#   choices:
-#     - value: intellij
-#       text: IntelliJ Idea
-#     - value: vscode
-#       text: Visual Studio Code
-#   description: Select the choice of IDE
+  #
+  # UI option to pick IDE specific configs. This options depends on buildTool above and only shows up if buildTool selected value is `gradle`
+  #
+  - name: ide
+    label: IDE
+    inputType: select
+    defaultValue: intellij
+    dependsOn: 
+      name: buildTool
+      value: gradle
+    choices:
+      - value: intellij
+        text: IntelliJ Idea
+      - value: vscode
+        text: Visual Studio Code
+    description: Select the choice of IDE
 
-# #
-# # Example UI options for reference from here on out. For the workshop, UI options will be leverage for all the other steps.
-# #
-# - name: nativeBuild
-#   label: Support native GraalVM builds (Requires Spring Boot 3.0 or 3.1 and Java 17)
-#   inputType: checkbox
-#   dataType: boolean
-#   defaultValue: false
+  #
+  # Example UI options for reference from here on out. For the workshop, UI options will be leverage for all the other steps.
+  #
+  - name: nativeBuild
+    label: Support native GraalVM builds (Requires Spring Boot 3.0 or 3.1 and Java 17)
+    inputType: checkbox
+    dataType: boolean
+    defaultValue: false
 
-# - name: text
-#   description: 'Enter some text'
-#   defaultValue: Text value
+  - name: text
+    description: 'Enter some text'
+    defaultValue: Text value
 
-# - name: toggle
-#   inputType: checkbox
-#   dataType: boolean
-#   defaultValue: true
+  - name: toggle
+    inputType: checkbox
+    dataType: boolean
+    defaultValue: true
 
-# - name: textarea
-#   inputType: textarea
-#   defaultValue: |
-#     Text line 1
-#     Text line 2
+  - name: textarea
+    inputType: textarea
+    defaultValue: |
+      Text line 1
+      Text line 2
 
-# - name: checkbox
-#   inputType: checkbox
-#   dataType: [string]
-#   defaultValue:
-#     - value-2
-#   choices:
-#     - text: Checkbox choice 1
-#       value: value-1
-#     - text: Checkbox choice 2
-#       value: value-2
-#     - text: Checkbox choice 3
-#       value: value-3
+  - name: checkbox
+    inputType: checkbox
+    dataType: [string]
+    defaultValue:
+      - value-2
+    choices:
+      - text: Checkbox choice 1
+        value: value-1
+      - text: Checkbox choice 2
+        value: value-2
+      - text: Checkbox choice 3
+        value: value-3
 
-# - name: checkbox2
-#   description: 'This option is dependend on - select "choice 3" only to see that option below'
-#   inputType: checkbox
-#   dataType: [string]
-#   defaultValue:
-#     - value-1
-#   choices:
-#     - text: Checkbox2 choice 1
-#       value: value-1
-#     - text: Checkbox2 choice 2
-#       value: value-2
-#     - text: Checkbox2 choice 3
-#       value: value-3
+  - name: checkbox2
+    description: 'This option is dependend on - select "choice 3" only to see that option below'
+    inputType: checkbox
+    dataType: [string]
+    defaultValue:
+      - value-1
+    choices:
+      - text: Checkbox2 choice 1
+        value: value-1
+      - text: Checkbox2 choice 2
+        value: value-2
+      - text: Checkbox2 choice 3
+        value: value-3
 
-# - name: dependsOnCheckbox2
-#   description: Visibility depends on the checkbox2 option containing a checked value value-3 (Checkbox2 choice 3).
-#   dependsOn:
-#     name: checkbox2
-#     value: [value-3]
-#   defaultValue: text value
+  - name: dependsOnCheckbox2
+    description: Visibility depends on the checkbox2 option containing a checked value value-3 (Checkbox2 choice 3).
+    dependsOn:
+      name: checkbox2
+      value: [value-3]
+    defaultValue: text value
 
-# - name: select
-#   inputType: select
-#   defaultValue: value-2
-#   choices:
-#     - text: Select choice 1
-#       value: value-1
-#     - text: Select choice 2
-#       value: value-2
-#     - text: Select choice 3
-#       value: value-3
+  - name: select
+    inputType: select
+    defaultValue: value-2
+    choices:
+      - text: Select choice 1
+        value: value-1
+      - text: Select choice 2
+        value: value-2
+      - text: Select choice 3
+        value: value-3
 
-# - name: radio
-#   inputType: radio
-#   defaultValue: value-2
-#   choices:
-#     - text: Radio choice 1
-#       value: value-1
-#     - text: Radio choice 2
-#       value: value-2
-#     - text: Radio choice 3
-#       value: value-3
+  - name: radio
+    inputType: radio
+    defaultValue: value-2
+    choices:
+      - text: Radio choice 1
+        value: value-1
+      - text: Radio choice 2
+        value: value-2
+      - text: Radio choice 3
+        value: value-3
 
-# - name: regexValidation
-#   label: Regex Validation
-#   inputType: text
-#   validationRegex: "^[a-zA-Z]{1,3}$"
+  - name: regexValidation
+    label: Regex Validation
+    inputType: text
+    validationRegex: "^[a-zA-Z]{1,3}$"
 
-# - name: required
-#   label: Required Field
-#   inputType: text
-#   display: true
-#   required: true
+  - name: required
+    label: Required Field
+    inputType: text
+    display: true
+    required: true
 
-# - name: aSingleTask
-#   label: An input using a custom struct type
-#   dataType: Task
+  - name: aSingleTask
+    label: An input using a custom struct type
+    dataType: Task
 
-# - name: severalTasks
-#   label: And a dynamic collection of those
-#   description: Add and remove as many tasks as you please
-#   dataType: [Task]
-#   defaultValue: []
+  - name: severalTasks
+    label: And a dynamic collection of those
+    description: Add and remove as many tasks as you please
+    dataType: [Task]
+    defaultValue: []
 
-#   types:
-#   - name: Task
-#     struct:
-#       - name: title
-#         dataType: string
-#         label: Title
-#         description: A sample title
-#       - name: details
-#         label: Task details
-#         description: Enter the task details
-#         defaultValue: ""
-#       - name: done
-#         dataType: boolean
-#         label: Done?
-#         defaultValue: false
+    types:
+    - name: Task
+      struct:
+        - name: title
+          dataType: string
+          label: Title
+          description: A sample title
+        - name: details
+          label: Task details
+          description: Enter the task details
+          defaultValue: ""
+        - name: done
+          dataType: boolean
+          label: Done?
+          defaultValue: false
