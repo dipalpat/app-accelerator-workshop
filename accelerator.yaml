@@ -38,13 +38,8 @@ accelerator:
     dataType: boolean
     defaultValue: false
 
-  engine:
-    merge:
-      - include: [ "**" ]
-        exclude: [ "pom.xml", "README.md" ]
-      - include: [ "pom.xml" ]
-        chain:
-          - type: ReplaceText
-            substitutions:
-              - text: "<groupId>com.example</groupId>"
-                with: "'<groupId>' + #packageName + '</groupId>'"
+engine:
+  chain: 
+  - include: [ "**/**" ]
+    exclude: [ "options.json", "run.sh"]
+    

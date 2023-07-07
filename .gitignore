@@ -1,1 +1,4 @@
 .vscode/
+acc-engine-endpoint.sh
+output/
+target/
