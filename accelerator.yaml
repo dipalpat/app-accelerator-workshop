@@ -5,15 +5,15 @@ accelerator:
   tags: ["spring", "java", "web"]
 
 options:
-
-#
-# UI option to get the package name for the generated java code
-#
-- name: packageName
-  label: Package name
-  dataType: string
-  required: true
-  defaultValue: "com.acme"
+  #
+  # UI option to get the package name for the generated java code
+  #
+  - name: packageName
+    dataType: string
+    required: true
+    defaultValue: "com.acme"
+    label: Package name
+    description: Name of the package to put generated code under
 
 #
 # UI option to get java version to use
