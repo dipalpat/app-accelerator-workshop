@@ -1,0 +1,6 @@
+{
+    "generateK8sYAMLS": false,
+    "javaVersion": "11",
+    "packageName": "com.acme",
+    "projectName": "test-abc"
+}
