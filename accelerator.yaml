@@ -18,16 +18,16 @@ options:
 #
 # UI option to get java version to use
 #
-- name: javaVersion
-  label: Java version to use
-  inputType: select
-  defaultValue: "11"
-  choices:
-  - value: "11"
-    text: "Java 11"
-  - value: "17"
-    text: "Java 17"
-  description: Select java version to use
+# - name: javaVersion
+#   label: Java version to use
+#   inputType: select
+#   defaultValue: "11"
+#   choices:
+#   - value: "11"
+#     text: "Java 11"
+#   - value: "17"
+#     text: "Java 17"
+#   description: Select java version to use
 
 
 # #
