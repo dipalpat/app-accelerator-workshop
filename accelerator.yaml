@@ -38,6 +38,8 @@ accelerator:
     dataType: boolean
     defaultValue: false
 
+## Added engine section that does the transforms. Here we are using chain transform with include filter of all folders and files. 
+## We then add exclude filter to ensure resulting output files won't include files.
 engine:
   chain: 
   - include: [ "**/**" ]
