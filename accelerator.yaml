@@ -165,7 +165,7 @@ options:
     dataType: [Task]
     defaultValue: []
 
-  types:
+    types:
     - name: Task
       struct:
         - name: title
