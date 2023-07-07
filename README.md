@@ -23,16 +23,24 @@ az spring application-accelerator customized-accelerator create \
   --git-url https://github.com/asaikali/Spring-Boot-REST-API-Accelerator 
 ```
 * Tanzu Application Platform
-#### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/main...registration)
+* [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/main...registration)
 
 ### UI Options
 * Check out `ui-options` branch
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
 * If this accelerator is already registered, ensure you change the branch to `ui-options`
-### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/registration...ui-options)
+* [View difference from registration branch](https://github.com/dipalpat/app-accelerator-workshop/compare/registration...ui-options)
   
-### Transforms-1 - Change artifactID
+### Transforms-1
 * Check out `transforms-1` branch
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
 * If this accelerator is already registered, ensure you change the branch to `transforms-1`
-#### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/ui-options...transforms-1)
+* This section introduces to the chain transform and include and exclude filters. This sets the foundation for next lab that build on this.
+* [View difference from ui-options branch](https://github.com/dipalpat/app-accelerator-workshop/compare/ui-options...transforms-1)
+
+### Transforms-2
+* Check out `transforms-1` branch
+* Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
+* If this accelerator is already registered, ensure you change the branch to `transforms-1`
+* We now add another include filter on top of previous lab and add substitution logic to replace `helloworld` references within `pom.xml`. Explain the behavior of chain tranform. 
+* [View difference from ui-options branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-1...transforms-2)
