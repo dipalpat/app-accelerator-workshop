@@ -9,19 +9,18 @@ Check out the `registration` branch. In this lab, we create accelerator.yaml fil
 * [Azure Spring Apps Enterprise Portal](https://learn.microsoft.com/en-us/azure/spring-apps/how-to-use-accelerator?tabs=Portal#manage-your-own-accelerators)
 * Azure CLI
   * The step is to register the accelerator with Azure Spring Apps using the command below.You will need to make modifications to match where the Azure Spring Apps instance is deployed, along with the specific details of accelerator such as name, git repo it is located in, and display name.
-
-```
-ASA_SERVICE_RG=demo && \
-ASA_SERVICE_NAME=demo-asa && \
-az spring application-accelerator customized-accelerator create \
-  --resource-group ${ASA_SERVICE_RG} \
-  --service ${ASA_SERVICE_NAME} \
-  --name spring-boot-rest-api \
-  --display-name "Spring Boot REST API" \
-  --git-branch main \
-  --git-interval 10 \
-  --git-url https://github.com/asaikali/Spring-Boot-REST-API-Accelerator 
-```
+  ```
+  ASA_SERVICE_RG=demo && \
+  ASA_SERVICE_NAME=demo-asa && \
+  az spring application-accelerator customized-accelerator create \
+    --resource-group ${ASA_SERVICE_RG} \
+    --service ${ASA_SERVICE_NAME} \
+    --name spring-boot-rest-api \
+    --display-name "Spring Boot REST API" \
+    --git-branch main \
+    --git-interval 10 \
+    --git-url https://github.com/asaikali/Spring-Boot-REST-API-Accelerator 
+  ```
 * Tanzu Application Platform
   * Out of scope for this iteration. To register app accelerator to TAP, we need to create CR and apply it to the cluster
 * [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/main...registration)
