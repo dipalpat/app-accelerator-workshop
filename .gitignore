@@ -33,4 +33,3 @@ build/
 .vscode/
 
 output/
-acc-engine-endpoint.sh
