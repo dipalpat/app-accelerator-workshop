@@ -164,18 +164,18 @@ accelerator:
     dataType: [Task]
     defaultValue: []
 
-    types:
-    - name: Task
-      struct:
-        - name: title
-          dataType: string
-          label: Title
-          description: A sample title
-        - name: details
-          label: Task details
-          description: Enter the task details
-          defaultValue: ""
-        - name: done
-          dataType: boolean
-          label: Done?
-          defaultValue: false
+  types:
+  - name: Task
+    struct:
+      - name: title
+        dataType: string
+        label: Title
+        description: A sample title
+      - name: details
+        label: Task details
+        description: Enter the task details
+        defaultValue: ""
+      - name: done
+        dataType: boolean
+        label: Done?
+        defaultValue: false
