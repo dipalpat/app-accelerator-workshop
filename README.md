@@ -23,7 +23,7 @@ az spring application-accelerator customized-accelerator create \
   --git-url https://github.com/asaikali/Spring-Boot-REST-API-Accelerator 
 ```
 * Tanzu Application Platform
-
+#### [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/main...registration)
 #### UI Options
 * Check out `step-1` branch
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid some overriding it)
