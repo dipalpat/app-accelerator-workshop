@@ -63,5 +63,5 @@ az spring application-accelerator customized-accelerator create \
 * Check out `comlete-lab` branch
 * Register the accelerator to TAP or Azure Spring Apps Instance. (If sharing same instance, change the accelerator & display name to avoid someone overriding it)
 * If this accelerator is already registered, ensure you change the branch to `complete-lab`
-* This is a complete lab and accelerator that includes all the previous labs. In this lab, we introduce YTT (YAML Templating Tool) transform and how to generate YAML files. YTT is part of (Carvel.dev)[https://carvel.dev] set of OSS tools. 
-* [View difference from transforms-3 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-4...complete-lab)
+* This is a complete lab and accelerator that includes all the previous labs. In this lab, we introduce YTT (YAML Templating Tool) transform and how to generate YAML files. YTT is part of [Carvel.dev](https://carvel.dev) set of OSS tools. 
+* [View difference from transforms-4 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-4...complete-lab)
