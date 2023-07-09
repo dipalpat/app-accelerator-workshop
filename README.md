@@ -5,7 +5,7 @@ This repo is step by step guide on how to learn various aspects of application a
 Check out this repo and test out the `main` branch content. It is a simple spring boot rest controller for demo purposes. This could be any of the pattern or existing blueprint available as git repo as a base to build on.
 
 ### Accelerator Registration
-Check out the `registration` branch. In this lab, we create accelerator.yaml file which is used to show all the UI options and holds all the transformations. There are two ways to publish the accelerators -
+Check out the `registration` branch. In this lab, we create accelerator.yaml file which is used to show all the UI options and holds all the transformations. There are few ways to publish the accelerators -
 * [Azure Spring Apps Enterprise Portal](https://learn.microsoft.com/en-us/azure/spring-apps/how-to-use-accelerator?tabs=Portal#manage-your-own-accelerators)
 * Azure CLI
   * The step is to register the accelerator with Azure Spring Apps using the command below.You will need to make modifications to match where the Azure Spring Apps instance is deployed, along with the specific details of accelerator such as name, git repo it is located in, and display name.
