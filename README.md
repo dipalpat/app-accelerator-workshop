@@ -23,7 +23,7 @@ Check out the `registration` branch. In this lab, we create accelerator.yaml fil
   ```
 * Tanzu Application Platform
   * Out of scope for this iteration. To register app accelerator to TAP, we need to create CR and apply it to the cluster
-* For this iteration we will focus on Azure Spring Apps Enterprise CLI or Azure Portal way for publishing the app accelerator.
+* For this iteration we will focus on Azure CLI or Azure Portal for publishing the app accelerator.
 * [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/main...registration)
 
 ### UI Options
