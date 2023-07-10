@@ -9,3 +9,5 @@ This repo is step by step guide on how to learn various aspects of application a
 * If this accelerator is already registered, ensure you change the branch to `complete-lab`
 * This is a complete lab and accelerator that includes all the previous labs. In this lab, we introduce YTT (YAML Templating Tool) transform and how to generate YAML files. YTT is part of [Carvel.dev](https://carvel.dev) set of OSS tools. 
 * [View difference from transforms-4 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-4...complete-lab)
+
+Proceed to the next lab and checkout `complete-lab` branch.
