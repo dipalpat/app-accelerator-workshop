@@ -9,3 +9,5 @@ This repo is step by step guide on how to learn various aspects of application a
 * If this accelerator is already registered, ensure you change the branch to `transforms-3`
 * Introduce `merge` transform and it's difference from `chain` transform. Add transform to replace packageName and Java version.
 * [View difference from transforms-2 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-2...transforms-3)
+
+Proceed to the next lab and checkout `transforms-4` branch.
