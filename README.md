@@ -4,3 +4,5 @@ This repo is step by step guide on how to learn various aspects of application a
 ### Main branch
 Check out this repo and test out the `main` branch content. It is a simple spring boot rest controller for demo purposes. This could be any of the pattern or existing blueprint available as git repo as a base to build on.
 
+Proceed to the next lab and checkout `registration` branch.
+
