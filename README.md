@@ -8,3 +8,4 @@ This repo is step by step guide on how to learn various aspects of application a
 * This lab shows you all the possible input options. 
 * [View difference from registration branch](https://github.com/dipalpat/app-accelerator-workshop/compare/registration...ui-options)
   
+Proceed to the next lab and checkout `transforms-1` branch.
