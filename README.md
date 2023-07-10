@@ -9,3 +9,5 @@ This repo is step by step guide on how to learn various aspects of application a
 * If this accelerator is already registered, ensure you change the branch to `transforms-2`
 * We now add another include filter on top of previous lab and add substitution logic to replace `helloworld` references within `pom.xml`. Explain the behavior of chain tranform. 
 * [View difference from transforms-1 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-1...transforms-2)
+
+Proceed to the next lab and checkout `transforms-3` branch.
