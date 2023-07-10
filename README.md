@@ -24,3 +24,6 @@ Check out the `registration` branch. In this lab, we create accelerator.yaml fil
 * For this iteration we will focus on Azure CLI or Azure Portal for publishing the app accelerator.
 * [View difference from main branch](https://github.com/dipalpat/app-accelerator-workshop/compare/main...registration)
 
+Proceed to the next lab and checkout `ui-options` branch.
+
+
