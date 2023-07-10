@@ -9,3 +9,5 @@ This repo is step by step guide on how to learn various aspects of application a
 * If this accelerator is already registered, ensure you change the branch to `transforms-4`
 * Introduce OpenRewrite and how to invoke recipes within accelerators. In this lab, we use `org.openrewrite.java.ChangePackage` recipe to change package name.
 * [View difference from transforms-3 branch](https://github.com/dipalpat/app-accelerator-workshop/compare/transforms-3...transforms-4)
+
+Proceed to the next lab and checkout `complete-lab` branch.
