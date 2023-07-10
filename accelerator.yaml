@@ -46,7 +46,7 @@ engine:
 # them together into a single sourceset.
   merge: 
   - include: [ "**/**" ]
-    exclude: [ "options.json", "run.sh","acc-engine-endpoint.sh"]
+    exclude: [ "options.json", "run.sh","acc-engine-endpoint.sh","src/main/java/com/example/**"]
   # I want to change "helloworld" in pom.xml to "projectName" value and include all files from include filter above.
   # But wait, I only get pom.xml as output. I want all the files as well....
   - include: [ "pom.xml" ]
@@ -76,6 +76,7 @@ engine:
         options:
           oldPackageName: "'com.example'"
           newPackageName: "#packageName"
+      - exclude: ["src/main/java/com/example/**"]
 
   # 
   # Generate the K8s manifests using carvel YTT tool
