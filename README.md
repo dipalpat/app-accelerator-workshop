@@ -9,3 +9,5 @@ This repo is step by step guide on how to learn various aspects of application a
 * If this accelerator is already registered, ensure you change the branch to `transforms-1`
 * This section introduces to the chain transform and include and exclude filters. This sets the foundation for next lab that build on this.
 * [View difference from ui-options branch](https://github.com/dipalpat/app-accelerator-workshop/compare/ui-options...transforms-1)
+
+Proceed to the next lab and checkout `transforms-2` branch.
